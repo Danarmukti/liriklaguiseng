@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Madimi One";
+}
+body {
+  background: #1d1c1c;
+  height: 90vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.container {
+  padding: 2rem;
+  color: azure;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.moving-text {
+  -webkit-text-stroke: px rgba(202, 97, 207, 1);
+  position: absolute;
+  font-size: 67px;
+  color: rgb(243, 152, 255);
+  top: 980px;
+  left: 400px;
+  font-size: 40px;
+  text-shadow: -5px 0px 12px rgba(191, 32, 197, 1);
+  z-index: 1000;
+}
+
+.moving-text:nth-child(1) {
+  animation: sliding 2s ease 2s, ilang 1000ms ease 6s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(2) {
+  animation: sliding 2s ease 7s, ilang 1000ms ease 10s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(3) {
+  /* meski bibir ini tak berkata */
+  animation: sliding 2s ease 11s, ilang 1000ms ease 14s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(4) {
+  /*bukan berarti tak merasa..*/
+  animation: sliding 2s ease 14s, ilang 1000ms ease 18s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(5) {
+  /* ada yang berbeda di antara kita */
+  animation: sliding 2s ease 18s, ilang 1000ms ease 24s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(6) {
+  /*  dan tak mungkin ku melewatkanmu hanya karna */
+  animation: sliding 2s ease 24s, ilang 1000ms ease 28s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(7) {
+  /* diriku tak mampu untuk bicara */
+  animation: sliding 2s ease 29s, ilang 1000ms ease 32s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(8) {
+  /* bahwa aku */
+  animation: sliding 2s ease 32s, ilang 1000ms ease 35s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(9) {
+  /* inginkan kau ada... */
+  animation: sliding 2s ease 34s, ilang 1000ms ease 37s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(10) {
+  /* meski bibir ini tak berkata */
+  animation: sliding 2s ease 38s, ilang 1000ms ease 41s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(11) {
+  /* bukan berarti ku tak merasa.. */
+  animation: sliding 2s ease 41s, ilang 1000ms ease 45s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(12) {
+  /* ada yang berbeda di antara kita */
+  animation: sliding 2s ease 45s, ilang 1000ms ease 50s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(13) {
+  /* dan tak mungkin ku melewatkanmu hanya karna */
+  animation: sliding 2s ease 50s, ilang 1000ms ease 56s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(14) {
+  /* diriku tak mampu untuk bicara */
+  animation: sliding 2s ease 56s, ilang 1000ms ease 59s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(15) {
+  /* bahwa aku */
+  animation: sliding 2s ease 59s, ilang 1000ms ease 61s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(16) {
+  /*inginkan kau ada */
+  animation: sliding 2s ease 61s, ilang 1000ms ease 63s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(17) {
+  /* di hidup ku  */
+  animation: sliding 2s ease 63.5s, ilang 1000ms ease 68s;
+  animation-fill-mode: forwards;
+}
+.moving-text:nth-child(18) {
+  /* di hidup ku */
+  animation: sliding 2s ease 68s, ilang 1000ms ease 90s;
+  animation-fill-mode: forwards;
+}
+@keyframes ilang {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sliding {
+  0% {
+    transform: translateY(580px);
+  }
+  100% {
+    transform: translateY(-580px);
+  }
+}
+audio {
+  transform: translateY(-100px);
+  display: none;
+  z-index: -10;
+}
+video {
+  margin-top: -1000px;
+  z-index: 1;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .moving-text {
+    -webkit-text-stroke: px rgba(202, 97, 207, 1);
+    position: absolute;
+    font-size: 67px;
+    color: rgb(243, 152, 255);
+    top: 940px;
+    left: 10px;
+    font-size: 40px;
+    text-shadow: -5px 0px 12px rgba(191, 32, 197, 1);
+    z-index: 1000;
+  }
+  body {
+    background: #1d1c1c;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}

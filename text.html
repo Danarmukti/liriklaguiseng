@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="text1" class="moving-text">siapkah kau tuk jatuh cinta</div>
+      <div id="text2" class="moving-text">lagi...</div>
+      <div id="text3" class="moving-text">meski bibir ini tak berkata</div>
+      <div id="text4" class="moving-text">bukan berarti ku tak merasa..</div>
+      <div id="text5" class="moving-text">ada yang berbeda di antara kita</div>
+      <div id="text6" class="moving-text">
+        dan tak mungkin ku melewatkanmu hanya karna
+      </div>
+      <div id="text7" class="moving-text">diriku tak mampu untuk bicara</div>
+      <div id="text8" class="moving-text">bahwa aku</div>
+      <div id="text9" class="moving-text">inginkan kau ada...</div>
+      <div id="text10" class="moving-text">meski bibir ini tak berkata</div>
+      <div id="text11" class="moving-text">bukan berarti ku tak merasa..</div>
+      <div id="text12" class="moving-text">ada yang berbeda di antara kita</div>
+      <div id="text13" class="moving-text">
+        dan tak mungkin ku melewatkanmu hanya karna
+      </div>
+      <div id="text14" class="moving-text">diriku tak mampu untuk bicara</div>
+      <div id="text15" class="moving-text">bahwa aku</div>
+      <div id="text16" class="moving-text">inginkan kau ada</div>
+      <div id="text17" class="moving-text">
+        di hidup ku💖</i>
+      </div>
+      <div id="text16" class="moving-text">@danarmuktiw</div>
+    </div>
+    <audio id="myAudio" controls autoplay>
+      <source
+        src="asset/HIVI! - Siapkah Kau 'Tuk Jatuh Cinta Lagi (Official Lyric Video).mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <video width="1920px" height="1080px">
+      <source
+        src="asset/No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Waktu dalam menit untuk memulai musik
+        var startMinute = 2.9; // Ubah sesuai keinginan
+
+        // Volume awal (0.0 - 1.0)
+        var initialVolume = 0.3; // Ubah sesuai keinginan
+
+        // Hitung waktu dalam detik
+        var startTimeInSeconds = startMinute * 60;
+
+        // Dapatkan elemen audio
+        var audio = document.getElementById("myAudio");
+
+        // Atur waktu mulai audio
+        audio.currentTime = startTimeInSeconds;
+
+        // Atur volume awal
+        audio.volume = initialVolume;
+
+        // Memutar musik
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
